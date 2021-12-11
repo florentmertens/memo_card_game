@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Sora', sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  height: 20vw;
+  width: 20vw;
+  transition: all 0.5s ease;
+}
+
+
+.back {
+  background: url(images/Logo_LOSC_Lille.png) no-repeat center;
+  background-size: contain;
+}
+
+.found {
+  pointer-events: none;
+}
+
+.result {
+  display: none;
+  margin-bottom: 30px;
+}
+
+button {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 100px;
+  box-shadow: 10px 10px black;
+}
